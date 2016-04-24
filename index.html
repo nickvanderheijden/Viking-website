@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+			$(document).ready(function () {
+				if(window.location.href.indexOf("#content") == -1) {
+					$('html, body').animate({ scrollTop: 130 }, 1400).delay(800).animate({ scrollTop: 340 }, 1900);
+				}
+			});
+		</script>
+		<title>
+			Vikings
+		</title>
+	</head>
+	<body>
+		<!--
+		TODO: Placeholder image van de video moet zelfde formaat hebben als video zelf.
+		TODO Trailers: Link maken & zorgen dat div's op smal scherm onder elkaar komen
+		TODO: Codering fixen van rare karakters
+		TODO: Text overal afmaken.
+		-->
+		<header>
+			<div id="video">
+				<video height="500" autoplay loop muted poster="img/masthead.jpg">
+	  				<source src="img/movie.mp4" type="video/mp4">
+				</video>
+			</div>
+		</header>
+		<a id="anchor" name="content"></a>
+		<nav>
+			<ul>
+				<li id="currentli"><a id="current" href="index.html#content">Home</a></li>
+				<li><a href="seizoen1.html#content">Seizoen 1</a></li>
+				<li><a href="seizoen2.html#content">Seizoen 2</a></li>
+				<li><a href="seizoen3.html#content">Seizoen 3</a></li>
+				<li><a href="karakters.html#content">Karakters</a>
+                <ul class="submenu">
+				    <li><a href="person.html">Ragnar</a></li>
+				    <li><a href="person2.html">Aslaug</a></li>
+				    <li><a href="person3.html">Athelstan</a></li>
+                    <li><a href="person4.html">Bjorn</a></li>
+				    <li><a href="person5.html">Earl Harald</a></li>
+				    <li><a href="person6.html">King Ecbert</a></li>
+                    <li><a href="person7.html">Floki</a></li>
+				    <li><a href="person8.html">Jarl Borg</a></li>
+				    <li><a href="person9.html">Rollo</a></li>
+                    <li><a href="person10.html">Siggy</a></li>
+				    <li><a href="person11.html">King Horrik</a></li>
+				    <li><a href="person12.html">Lagertha</a></li>
+                    <li><a href="person13.html">Porunn</a></li>
+			</ul>
+                </li>
+				<li><a href="contact.html#content">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- Content -->
+		<div class="content">
+			<h1><a name="content"></a>Welkom op de Vikings fansite</h1>
+			<article id="article1">
+				<p>Vikings is een Iers-Canadese historische dramaserie uit 2013,
+				gebaseerd op de saga's van de viking Ragnar Lodbrok.
+				De reeks werd geschreven en gemaakt door Michael Hirst voor de Amerikaanse zender History.
+				De opnames gebeurden grotendeels in Ierland.
+				In maart 2013 kende de reeks zijn premiere op deze zender in Canada en de Verenigde Staten.
+				Eind augustus 2014 was de Belgische premiere op de Vlaamse zender 2BE.
+				Vanaf januari 2015 werd de serie in Nederland vertoond door de zender FOX.</p>
+
+				<p>De reeks begint aan het begin van het tijdperk van de vikingen, rond de 9e eeuw, in Scandinavie.
+				De mannen van het Kattegat worden jaarlijks op rooftocht naar het oosten gestuurd door de jarl dus graaf.
+				Boer Ragnar heeft echter verhalen gehoord over de "grote schatten" die in het westen te rapen vallen en
+				wil eens graag die kant op.
+				Van een reiziger heeft hij ook een zonnewijzer en -steen gekregen om op koers te blijven in open zee.
+				De graaf verbiedt het echter en dus bouwt Ragnars vriend en scheepsbouwer Floki heimelijk een langboot voor hem. </p>
+			</article>
+			<article id="article2">
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/xdm7Z3TQhDg" frameborder="0" allowfullscreen></iframe>
+			</article>
+		</div>
+		<footer>
+            <p>Copyright Nick & Jelle 2k15</p>
+		</footer>
+	</body>
+</html>
